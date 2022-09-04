@@ -15,8 +15,7 @@ class ContaBancaria
            
        else
             #não consigo transferir
-            puts "#{@cliente}, Não há saldo suficiente para esta operação. Saldo atual é de:R$ #{@valor}"
-            puts "#{@cliente}, R$ #{saldo} é valor permitido para realizar esta operação"
+            raise "#{@cliente}, Não há saldo suficiente para esta operação. Saldo atual é de:R$ #{@valor}"
        end
     end
 
