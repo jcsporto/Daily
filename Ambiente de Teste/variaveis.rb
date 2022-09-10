@@ -1,4 +1,5 @@
 class Customer 
+    @@no_of_customers = 0
     def initialize(id, name, addr)
       @cust_id = id
       @cust_name = name
@@ -9,6 +10,10 @@ class Customer
         puts "Customer name: #@cust_name"
         puts "Customer addr: #@cust_addr"
     end 
+    def total_on_of_customers()
+        @@no_of_customers += 1
+        puts "Total: #@@no_of_customers"
+    end
 end
 
 #Create Objects
@@ -18,4 +23,9 @@ cust2 = Customer.new("2","Rafaella", "Viana - ES")
 # Call Methods
 cust1.display_details()
 cust2.display_details()
+
+cust1.total_on_of_customers()
+cust2.total_on_of_customers()
+
+
 
