@@ -1,5 +1,5 @@
 
-(20..35).each do |n|
+(25..35).each do |n|
     print n, ' '
 end
 
