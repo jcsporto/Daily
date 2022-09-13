@@ -1,5 +1,5 @@
-time1 = Time.new 
-puts "Current Time: " +  time1.inspect
+time = Time.new 
 
-time2 = Time.new 
-puts "Current Time: "+ time2.inspect
+#Componentes da Time
+puts "Current Time: "+ time.inspect 
+puts time.year
