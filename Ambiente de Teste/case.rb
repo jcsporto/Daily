@@ -1,4 +1,4 @@
-$age = 10
+$age = 2
 
 case $age
 when 0..2
