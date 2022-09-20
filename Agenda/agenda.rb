@@ -14,6 +14,15 @@ def todos_contatos
    puts "--------------------------------------"
 end
 
+def adicionar_contato
+    print "Nome:"
+    nome = gets.chomp
+    print "Telefone:"
+    telefone = gets.chomp
+
+    @agenda << {nome: nome, telefone: telefone}
+end
+
 loop do 
 puts "1. Contatos\n2. Adicionar Contato\n3. Ver Contato\n4. Editar Contato\n5. Remover Contato\n0. Sair"
     codigo = gets.chomp.to_i
@@ -24,5 +33,7 @@ puts "1. Contatos\n2. Adicionar Contato\n3. Ver Contato\n4. Editar Contato\n5. R
         break
     when codigo == 1
         todos_contatos
-    end
+    when codigo == 2
+        adicionar_contato
+    end    
 end
