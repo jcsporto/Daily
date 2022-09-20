@@ -23,6 +23,19 @@ def adicionar_contato
     @agenda << {nome: nome, telefone: telefone}
 end
 
+def ver_contato
+    puts "--------------------------------------"
+    print "Qual nome você deseja: "
+    nome = gets.chomp
+
+    @agenda.each do |contato| 
+        if contato[:nome].downcase == (nome.downcase)
+            puts "#{contato[:nome]} - #{contato[:telefone]}"
+        end
+    end
+    puts "--------------------------------------"
+end
+
 loop do 
 puts "1. Contatos\n2. Adicionar Contato\n3. Ver Contato\n4. Editar Contato\n5. Remover Contato\n0. Sair"
     codigo = gets.chomp.to_i
@@ -35,5 +48,9 @@ puts "1. Contatos\n2. Adicionar Contato\n3. Ver Contato\n4. Editar Contato\n5. R
         todos_contatos
     when codigo == 2
         adicionar_contato
+    when codigo == 3
+        ver_contato
+    when codigo == 4
+        editar_contato
     end    
 end
