@@ -62,7 +62,13 @@ end
 
 def reomve_contato
     print "Qual contatoo deseja remover: "
-    
+    nome = gets.chomp
+
+    @agenda.each do |contato|
+        if contato[:nome].downcase == (nome.downcase)
+            
+        end    
+    end
 end
 
 loop do 
