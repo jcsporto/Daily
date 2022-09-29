@@ -1,16 +1,17 @@
 class Aluno
     attr_reader :nome, :idade
     
-    def def initialize(n, i)
-      @nome, @idade = n, i
+    def initialize(nome, idade)
+      @nome = nome
+      @idade = idade
     end 
+
+    def mostrar_dados
+        puts "Nome: #{@nome} - Idade: #{@idade}"
+    end
 end
 
 
 a1 = Aluno.new ("Jean", 40)
 
-
-# a1.nome = "Jean"
-# a1.idade = "42"
-
-puts "Nome: #{a1.nome} - Idade: #{a1.idade}"
+a1.mostrar_dados
