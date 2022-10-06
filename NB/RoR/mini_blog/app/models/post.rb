@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
-    validates :description, presence: true
-    validades :title, length: {minimum:5}
+    validates :title, :description, presence: true
+    validates :title, length: { minimum:5 }
+    validates :description, length: {maximum: 20}
 end
