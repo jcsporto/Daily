@@ -1,2 +1,6 @@
-<h1>Home#index</h1>
+<h1>Ola pessoal, seja bem vindo a nossa página</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+
+<% @posts.each do |post| %>
+    <h1> <%= post.tilte %></h1>
+<% end %>
