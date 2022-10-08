@@ -2,5 +2,9 @@
 <p>Find me in app/views/home/index.html.erb</p>
 
 <% @posts.each do |post| %>
-    <h1> <%= post.tilte %></h1>
+    <% if post.description?%>
+        <h2> <%= link_to post.title, post %></h2>
+    <% end %>
 <% end %>
+
+<%= link_to 'Posts', posts_path %>
