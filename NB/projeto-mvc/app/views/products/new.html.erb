@@ -1,1 +1,11 @@
 Pagina New
+<%= form_with(model: @product) do |form| %>
+    <%= form.label :name%>
+    <%= form.text_field :name %>
+    <%= form.label :quantidade%>
+    <%= form.number_field :quantidade %>
+    <%= form.label :price %>
+    <%= form.number_field :price %>
+
+    <%= form.submit "Salvar"%>
+<% end %>
