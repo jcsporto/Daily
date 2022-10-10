@@ -1,5 +1,5 @@
 class ProductsController < ApplicationController
-    before_action :set_product, only: [:show]
+    before_action :set_product, only: [:show, :edit]
     
     def index
         @products = Product.all
@@ -19,6 +19,8 @@ class ProductsController < ApplicationController
             render :new, status: :unprocessable_entity
         end
     end
+
+    def edit; end
 
     private 
 
