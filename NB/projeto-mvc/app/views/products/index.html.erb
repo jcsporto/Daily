@@ -1,14 +1,21 @@
-<h1>Produtos</h1>
+<h1>Lista de Produtos</h1>
 
 <%= link_to 'Criar Produto', new_product_path %>
 
+<p><hr></p>
 <% @products.each do |product| %>
 
-<p> <%= product.name %></p>
-<p> <%= product.price %></p>
-<p> <%= product.quantidade %></p>
+<p> 
+    <%= product.name %>
+    <%= product.price %>
+    <%= product.quantidade %>
+</p>
 
-<%= link_to 'Ver Produto', product %>
-<%= link_to 'Editar Produto', edit_product_path(product) %>
+<p>
+    <%= link_to 'Ver Produto', product %>
+    <%= link_to 'Editar Produto', edit_product_path(product) %>
+    <%= button_to 'Apagar', product, method: :delete, form: {data: {turbo_confirm: "Você quer apagar este produto?" } } %>
+</p>
+<p><hr></p>
 <% end %>
 
