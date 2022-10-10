@@ -1,4 +1,4 @@
-Pagina New
+<h2>Pagina New</h2>
 <%= form_with(model: @product) do |form| %>
     <%= form.label :name%>
     <%= form.text_field :name %>
@@ -9,3 +9,5 @@ Pagina New
 
     <%= form.submit "Salvar"%>
 <% end %>
+
+<%= link_to 'Voltar', products_path %>
