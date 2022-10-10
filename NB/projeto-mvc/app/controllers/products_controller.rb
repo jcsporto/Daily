@@ -11,9 +11,17 @@ class ProductsController < ApplicationController
         @product = Product.new
     end
 
+    def create
+        @product = Product.new(product_params)
+    end
+
     private 
 
     def set_product 
         @product = Product.find(params[:id])
+    end
+
+    def product_params
+        params.require(:product).permit(:name, :quantidade, :price)
     end
 end
