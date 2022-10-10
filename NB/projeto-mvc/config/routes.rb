@@ -8,6 +8,6 @@ Rails.application.routes.draw do
 #   post 'products', to: "products#create"
 #   get 'products/:id', to: "products#show"
 
-  resources :product
+  resources :products
 end
 
