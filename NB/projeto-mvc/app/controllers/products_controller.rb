@@ -7,6 +7,10 @@ class ProductsController < ApplicationController
 
     def show; end
 
+    def new 
+    
+    end
+
     private 
 
     def set_product 
