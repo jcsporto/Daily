@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema[7.0].define(version: 2022_10_15_193337) do
   create_table "accounts", force: :cascade do |t|
-    t.string "author"
+    t.string "autho_id"
     t.string "references"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
