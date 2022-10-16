@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doctor: one
+  data: 2022-10-16 06:20:40
+
+two:
+  doctor: two
+  data: 2022-10-16 06:20:40
