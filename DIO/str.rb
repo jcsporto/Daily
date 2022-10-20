@@ -1,9 +1,9 @@
 nome = "Jean"
 
-puts ["A", "B", "C"]
+p nome[0]
+p nome[-1] 
+p nome[-2]
 
-print ["A", "B", "C"]
+p nome.chars
 
-p ["A", "B", "C"]
-
-p "quebra automaticamente"
+p nome[0]
