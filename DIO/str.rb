@@ -1,9 +1,5 @@
-nome = "Jean"
+puts "Cabeçalho"
 
-p nome[0]
-p nome[-1] 
-p nome[-2]
+puts "-" * 10
 
-p nome.chars
-
-p nome[0]
+puts "texto de informação"
