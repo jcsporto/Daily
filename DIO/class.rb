@@ -15,7 +15,7 @@ class MinhaClasse
         puts "Metodo 3"
     end 
 
-
+    protected
     def m5
         puts "Metodo 5"
     end 
@@ -24,7 +24,9 @@ end
 class MinhaSubClasse < MinhaClasse
     def m4
         m3
+        outro_obj = MinhaClasse.new
         puts "Metodo 4"
+        outro_obj.m5
     end
 end
 
