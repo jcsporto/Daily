@@ -1,8 +1,12 @@
 class MinhaClasse 
     def m1
         puts "Metodo 1"
+        m2
+        m3
     end 
 
+
+    private
     def m2
         puts "Metodo 2"
     end 
@@ -10,9 +14,19 @@ class MinhaClasse
     def m3
         puts "Metodo 3"
     end 
+
+
+    def m5
+        puts "Metodo 5"
+    end 
 end
 
-obj = MinhaClasse.new
-obj.m1
-obj.m2
-obj.m3
+class MinhaSubClasse < MinhaClasse
+    def m4
+        m3
+        puts "Metodo 4"
+    end
+end
+
+obj = MinhaSubClasse.new
+obj.m4
