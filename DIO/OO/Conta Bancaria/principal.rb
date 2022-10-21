@@ -1,4 +1,5 @@
 #principal 
+require "./classes/conta_bancaria.rb"
 
 conta_jean = ContaBancaria.new("Jean", 100)
 conta_porto = ContaBancaria.new("Porto", 200)
