@@ -11,3 +11,13 @@ puts "removing nil value: #{a.compact!}\n\n"
 puts "removing nil value: #{b.compact!}\n\n"
 
 puts "removing nil value: #{c.compact!}\n\n"
+
+
+class Pessoa 
+    def falar
+        puts "Falando!"
+    end
+end
+
+pss = Pessoa.new
+pss.falar
