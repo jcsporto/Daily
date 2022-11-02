@@ -23,3 +23,9 @@ p arr_c[2]
 p arr_a.size.eql?(5)
 p arr_a.size.eql?(3)
 
+
+
+
+
+
+
