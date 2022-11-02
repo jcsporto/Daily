@@ -1,2 +1,0 @@
-class Coin < ApplicationRecord
-end
