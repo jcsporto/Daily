@@ -5,6 +5,3 @@
 
 # puts b
 
-puts = "Enter a value: "
-val = gets
-puts val
