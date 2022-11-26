@@ -1,7 +1,8 @@
-File.open('shopping-list.rb', 'a') do |line|
+File.open('shopping-list.log', 'a') do |line|
     line.puts('arroz')
     line.puts('feijão')
     line.puts('azeite')
-    line.puts('de')
-    line.puts('oliva')
+    line.print('de')
+    line.print('oliva')
+    line.print('--------------')
 end
