@@ -7,7 +7,7 @@ loop do
     puts '0 - Sair'
     print 'Opção: '
 
-    option = get.chomp.to_i
+    option = gets.chomp.to_i
 
     if option == 1
         print 'Digite o ano de nascimento: '
