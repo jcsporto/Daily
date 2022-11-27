@@ -1,4 +1,5 @@
 day = "Sunday"
+lunch = 'normal'
 
 if day == "Sunday"
     lunch = 'special'
