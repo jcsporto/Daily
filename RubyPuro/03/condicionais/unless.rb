@@ -1,5 +1,6 @@
 product_status = 'closed'
 
+#unless = if not
 unless product_status =='open'
     check_change = 'can'
 else
