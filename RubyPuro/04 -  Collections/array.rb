@@ -50,3 +50,19 @@ p cidades.push("Belo Horizonte").empty?
 p estados.include?('São Paulo')
 p estados.include?('Santa Catarina')
 
+
+#excluir elementos
+p estados
+estados.delete_at(2)
+p estados
+
+#deletar o ulimo elemento
+estados.pop 
+p estados
+
+#deletar o primeiro elemento
+estados.shift
+p estados
+
+
+
