@@ -41,4 +41,8 @@ class LutadoX
     include Bracos
 end
 
+class LutadoX
+    include Pernas
+end
+
 
