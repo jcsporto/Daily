@@ -6,7 +6,7 @@ module ReverseWorld
     class Imprimir
         def call text
             print text
-            print '----------'
+            print '----Imprimir------'
         end
     end
 end
@@ -17,6 +17,10 @@ module NormalWorld
     end
 end
 
-ReverseWorld::puts 'O resultado é'
-NormalWorld::puts 'O resultado é'
-#puts 'O resultado é'
+imprimir = ReverseWorld::Imprimir.new 
+imprimir.call 'O resultado é '
+
+
+# ReverseWorld::puts 'O resultado é'
+# NormalWorld::puts 'O resultado é'
+# #puts 'O resultado é'
