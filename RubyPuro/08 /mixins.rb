@@ -36,13 +36,20 @@ module Bracos
     end
 end
 
-class LutadoX
+class LutadorX
     include Pernas
     include Bracos
 end
 
-class LutadoX
+class LutadorY
     include Pernas
 end
 
 
+lutadorx = LutadorX.new
+lutadorx.chute_frontal
+lutadorx.jab_de_direita
+
+
+lutadory = LutadorY.new
+lutadory.chute_lateral
