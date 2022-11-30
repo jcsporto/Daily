@@ -1,6 +1,6 @@
 
 module ImpressaoDecorada
-    def imprimi text
+    def imprimir text
         decoracao = '#' * 100
         puts decoracao
         puts text
@@ -11,6 +11,7 @@ end
 module Pernas 
     include ImpressaoDecorada
 
+    
     def chute_frontal
         imprimir 'Chute Frontal'
     end
@@ -24,15 +25,15 @@ module Bracos
     include ImpressaoDecorada
 
     def jab_de_direita 
-        imprimi 'Jab de direita'
+        imprimir 'Jab de direita'
     end
 
     def jab_de_esquerda
-        imprimi 'Jab de esquerda'
+        imprimir 'Jab de esquerda'
     end
 
     def gancho
-        imprimi 'Gancho'
+        imprimir 'Gancho'
     end
 end
 
