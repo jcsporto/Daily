@@ -36,4 +36,9 @@ module Bracos
     end
 end
 
+class LutadoX
+    include Pernas
+    include Bracos
+end
+
 
